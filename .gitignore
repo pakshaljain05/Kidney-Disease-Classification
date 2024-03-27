@@ -166,5 +166,4 @@ cython_debug/
 logs/running_logs.log
 mlflow_tracking_info.txt
 .dvcignore
-dvc.lock
 .dvc/config

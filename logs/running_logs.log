@@ -169,3 +169,525 @@ x==========x]
 [2024-03-27 18:37:11,622: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-03-27 19:30:54,267: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 19:30:54,310: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 19:32:29,862: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:32:29] "GET / HTTP/1.1" 200 -]
+[2024-03-27 19:33:20,620: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    test_image = np.expand.dims(test_image, axis=1)
+  File "C:\Users\Pakshal Jain\AppData\Roaming\Python\Python38\site-packages\numpy\__init__.py", line 311, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'expand'
+[2024-03-27 19:33:20,640: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:33:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 19:34:27,256: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:34:27] "GET / HTTP/1.1" 200 -]
+[2024-03-27 19:34:39,284: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 17, in predict
+    test_image = np.expand.dims(test_image, axis=1)
+  File "C:\Users\Pakshal Jain\AppData\Roaming\Python\Python38\site-packages\numpy\__init__.py", line 311, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'expand'
+[2024-03-27 19:34:39,289: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:34:39] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 19:39:07,197: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 19:39:07,198: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 19:39:27,733: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:39:27] "GET / HTTP/1.1" 200 -]
+[2024-03-27 19:39:39,578: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 18, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\PAKSHA~1\AppData\Local\Temp\__autograph_generated_filemq42mkwi.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2169, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2155, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2143, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2111, in predict_step
+        return self(x, training=False)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 1, 224, 3)
+
+[2024-03-27 19:39:39,632: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:39:39] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 19:40:40,751: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:40:40] "GET / HTTP/1.1" 200 -]
+[2024-03-27 19:40:52,871: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 18, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\PAKSHA~1\AppData\Local\Temp\__autograph_generated_filemq42mkwi.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2169, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2155, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2143, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2111, in predict_step
+        return self(x, training=False)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 1, 224, 3)
+
+[2024-03-27 19:40:52,880: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:40:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 19:47:07,717: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 19:47:07,718: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 19:47:12,054: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:47:12] "GET / HTTP/1.1" 200 -]
+[2024-03-27 19:47:19,656: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 23, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\PAKSHA~1\AppData\Local\Temp\__autograph_generated_filejqic8tsl.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2169, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2155, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2143, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2111, in predict_step
+        return self(x, training=False)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 1, 224, 3)
+
+[2024-03-27 19:47:19,844: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 19:47:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:32:13,277: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:32:13,277: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:32:22,199: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:32:22] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:33:28,433: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 26, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\PAKSHA~1\AppData\Local\Temp\__autograph_generated_fileigmxukt7.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2169, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2155, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2143, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2111, in predict_step
+        return self(x, training=False)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 1, 224, 3)
+
+[2024-03-27 20:33:28,530: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:33:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:35:24,600: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:35:24,601: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:35:24,761: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:35:24] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:35:38,505: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 23, in predict
+    test_image = tf.image.resize(test_image, (-1,224,224,3))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\tensorflow\python\ops\image_ops_impl.py", line 1459, in _resize_images_common
+    raise ValueError('\'size\' must be a 1-D Tensor of 2 elements: '
+ValueError: 'size' must be a 1-D Tensor of 2 elements: new_height, new_width
+[2024-03-27 20:35:38,609: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:35:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:37:26,244: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:37:26,246: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:37:26,303: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:37:26] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:37:34,694: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 27, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\PAKSHA~1\AppData\Local\Temp\__autograph_generated_filexd9uay59.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2169, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2155, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2143, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2111, in predict_step
+        return self(x, training=False)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 1, 224, 3)
+
+[2024-03-27 20:37:34,706: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:37:34] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:38:46,780: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:38:46,781: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:38:47,738: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:38:47] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:38:55,195: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 27, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\PAKSHA~1\AppData\Local\Temp\__autograph_generated_fileseiqcop2.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2169, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2155, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2143, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2111, in predict_step
+        return self(x, training=False)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 1, 224, 3)
+
+[2024-03-27 20:38:55,205: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:38:55] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:40:13,756: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:40:13,757: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:40:13,918: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:40:13] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:40:20,464: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 27, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\PAKSHA~1\AppData\Local\Temp\__autograph_generated_file0e8tkqp9.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2169, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2155, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2143, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2111, in predict_step
+        return self(x, training=False)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 224, 3)
+
+[2024-03-27 20:40:20,520: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:40:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:45:07,531: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:45:07,532: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:45:10,356: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:45:10] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:45:19,197: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 24, in predict
+    test_image = tf.image.resize(test_image, (1,224,224,3))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\tensorflow\python\ops\image_ops_impl.py", line 1459, in _resize_images_common
+    raise ValueError('\'size\' must be a 1-D Tensor of 2 elements: '
+ValueError: 'size' must be a 1-D Tensor of 2 elements: new_height, new_width
+[2024-03-27 20:45:19,219: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:45:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:47:31,330: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:47:31,725: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:47:34,809: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:47:34] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:47:42,671: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 26, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\PAKSHA~1\AppData\Local\Temp\__autograph_generated_file3zlboxip.py", line 15, in tf__predict_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2169, in predict_function  *
+        return step_function(self, iterator)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2155, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2143, in run_step  **
+        outputs = model.predict_step(data)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\training.py", line 2111, in predict_step
+        return self(x, training=False)
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 224, 224, 3), found shape=(32, 1, 224, 3)
+
+[2024-03-27 20:47:42,691: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:47:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:50:38,120: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:50:38,121: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:50:40,111: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:50:40] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:50:46,837: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\projects\kidney-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 52, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Pakshal_Jain\anaconda3\envs\kidney_disease\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-03-27 20:50:46,866: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:50:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-27 20:52:16,274: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:52:16,275: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:52:21,344: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:52:21] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:52:28,544: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:52:28] "POST /predict HTTP/1.1" 200 -]
+[2024-03-27 20:54:38,987: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:54:38] "POST /predict HTTP/1.1" 200 -]
+[2024-03-27 20:55:17,285: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7000
+ * Running on http://192.168.1.5:7000]
+[2024-03-27 20:55:17,285: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-27 20:55:17,321: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:55:17] "GET / HTTP/1.1" 200 -]
+[2024-03-27 20:55:28,008: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:55:28] "POST /predict HTTP/1.1" 200 -]
+[2024-03-27 20:55:38,136: INFO: _internal: 127.0.0.1 - - [27/Mar/2024 20:55:38] "POST /predict HTTP/1.1" 200 -]
